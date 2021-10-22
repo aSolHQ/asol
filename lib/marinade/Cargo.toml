@@ -1,6 +1,6 @@
 [package]
 name = "marinade"
-version = "0.1.0"
+version = "0.1.1"
 description = "Marinade stake pool Anchor client."
 edition = "2018"
 homepage = "https://asol.so"

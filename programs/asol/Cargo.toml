@@ -1,6 +1,6 @@
 [package]
 name = "asol"
-version = "0.1.0"
+version = "0.1.1"
 description = "aSOL: an aggregated Solana stake pool."
 edition = "2018"
 homepage = "https://asol.so"

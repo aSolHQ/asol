@@ -204,7 +204,7 @@ checksum = "23b62fc65de8e4e7f52534fb52b0f3ed04746ae267519eef2a83941e8085068b"
 
 [[package]]
 name = "asol"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
@@ -725,7 +725,7 @@ dependencies = [
 
 [[package]]
 name = "lido-anchor"
-version = "0.0.1"
+version = "0.1.1"
 dependencies = [
  "anchor-lang",
  "borsh",
@@ -743,7 +743,7 @@ dependencies = [
 
 [[package]]
 name = "marinade"
-version = "0.0.2"
+version = "0.1.1"
 dependencies = [
  "anchor-lang",
 ]

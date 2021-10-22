@@ -1,6 +1,6 @@
 [package]
 name = "lido-anchor"
-version = "0.1.0"
+version = "0.1.1"
 description = "Lido stake pool client"
 edition = "2018"
 homepage = "https://asol.so"

@@ -1,6 +1,6 @@
 {
   "name": "@asolhq/sdk",
-  "version": "0.0.14-alpha.1",
+  "version": "0.1.1",
   "description": "Aggregate of Solana stake pools.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
