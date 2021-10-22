@@ -1,4 +1,4 @@
-# 👾 aSOL: Aggregate Stake Pool
+# 🐉 aSOL: Aggregate Stake Pool
 
 [![License](https://img.shields.io/badge/license-AGPL%203.0-blue)](https://github.com/aSolHQ/asol/blob/master/LICENSE)
 [![Build Status](https://img.shields.io/github/workflow/status/aSolHQ/asol/E2E/master)](https://github.com/aSolHQ/asol/actions/workflows/programs-e2e.yml?query=branch%3Amaster)
