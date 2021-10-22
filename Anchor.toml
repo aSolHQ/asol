@@ -1,0 +1,31 @@
+anchor_version = "0.17.0"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "tests/fixture-key.json"
+
+[scripts]
+test = "yarn mocha"
+
+[[test.genesis]]
+address = "CRATwLpu6YZEeiVq9ajjxs61wPQ9f29s1UoQR9siJCRs"
+program = "./artifacts/programs/crate_token.so"
+
+[[test.genesis]]
+address = "1NKyU3qShZC3oJgvCCftAHDi5TFxcJwfyUz2FeZsiwE"
+program = "./artifacts/programs/crate_redeem_in_kind.so"
+
+[programs.mainnet]
+asol = "AURUqAcTZP8mhR6sWVxWyfBbpJRj4A3qqeFzLNhrwayE"
+
+[programs.devnet]
+asol = "AURUqAcTZP8mhR6sWVxWyfBbpJRj4A3qqeFzLNhrwayE"
+
+[programs.testnet]
+asol = "AURUqAcTZP8mhR6sWVxWyfBbpJRj4A3qqeFzLNhrwayE"
+
+[programs.localnet]
+asol = "AURUqAcTZP8mhR6sWVxWyfBbpJRj4A3qqeFzLNhrwayE"

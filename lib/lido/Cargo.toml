@@ -1,0 +1,25 @@
+[package]
+name = "lido-anchor"
+version = "0.1.0"
+description = "Lido stake pool client"
+edition = "2018"
+homepage = "https://asol.so"
+repository = "https://github.com/aSolHQ/asol"
+authors = ["0xAurelion <a@asol.so>"]
+license = "AGPL-3.0"
+keywords = ["solana", "stake-pool"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "lido_anchor"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.17.0"
+borsh = "0.9.1"
+lido = { version = "=1.1.0-patch.1", features = ["no-entrypoint"] }

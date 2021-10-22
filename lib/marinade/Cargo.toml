@@ -1,0 +1,23 @@
+[package]
+name = "marinade"
+version = "0.1.0"
+description = "Marinade stake pool Anchor client."
+edition = "2018"
+homepage = "https://asol.so"
+repository = "https://github.com/aSolHQ/asol"
+authors = ["0xAurelion <a@asol.so>"]
+license = "AGPL-3.0"
+keywords = ["solana", "stake-pool"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "marinade"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.17.0"

@@ -1,0 +1,33 @@
+[package]
+name = "asol"
+version = "0.1.0"
+description = "aSOL: an aggregated Solana stake pool."
+edition = "2018"
+homepage = "https://asol.so"
+repository = "https://github.com/aSolHQ/asol"
+authors = ["0xAurelion <a@asol.so>"]
+license = "AGPL-3.0"
+keywords = ["solana", "stake-pool"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "asol"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.17.0"
+anchor-spl = "0.17.0"
+base64 = "0.13.0"
+crate-token = { version = "0.3.0", features = ["cpi"] }
+crate-redeem-in-kind = { version = "0.3.0", features = ["cpi"] }
+lido-anchor = { path = "../../lib/lido", version = "0.1.0" }
+marinade = { path = "../../lib/marinade", version = "0.1.0", features = [
+    "cpi"
+] }
+num-traits = "0.2"
+vipers = "1.2.1"
