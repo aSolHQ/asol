@@ -1,6 +1,8 @@
 # `asol`
 
+![Crates.io](https://img.shields.io/crates/v/asol)](https://crates.io/crates/asol)
 [![Docs.rs](https://docs.rs/asol/badge.svg)](https://docs.rs/asol)
+[![License](https://img.shields.io/badge/license-AGPL%203.0-blue)](https://github.com/aSolHQ/asol/blob/master/LICENSE)
 
 An aggregate of staked SOL pools.
 
