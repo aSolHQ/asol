@@ -30,4 +30,4 @@ marinade = { path = "../../lib/marinade", version = "0.1.0", features = [
     "cpi"
 ] }
 num-traits = "0.2"
-vipers = "1.2.1"
+vipers = "1.4.0"
