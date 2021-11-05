@@ -1,6 +1,9 @@
 import { Token } from "@saberhq/token-utils";
 import { PublicKey } from "@solana/web3.js";
 
+/**
+ * Program ID of the aSOL program.
+ */
 export const ASOL_PROGRAM_ID = new PublicKey(
   "AURUqAcTZP8mhR6sWVxWyfBbpJRj4A3qqeFzLNhrwayE"
 );
@@ -21,6 +24,9 @@ export const LIDO_STAKED_SOL = new PublicKey(
   "7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj"
 );
 
+/**
+ * Supported stake pools.
+ */
 export const STAKE_POOL_TOKENS = {
   LIDO: new Token({
     chainId: 101,
@@ -56,4 +62,34 @@ export const STAKE_POOL_TOKENS = {
   }),
 };
 
+/**
+ * Number of decimals in one SOL.
+ */
 export const LAMPORTS_DECIMALS = 9;
+
+/**
+ * Mint address of the aSOL token.
+ */
+export const ASOL_MINT = new PublicKey(
+  "ASoLXbfe7cd6igh5yiEsU8M7FW64QRxPKkxk7sjAfond"
+);
+
+/**
+ * The aSOL token.
+ */
+export const ASOL_TOKEN = new Token({
+  chainId: 101,
+  address: ASOL_MINT.toString(),
+  symbol: "aSOL",
+  name: "aSOL Aggregate Solana Stake Pool",
+  decimals: LAMPORTS_DECIMALS,
+  logoURI: "https://asol.so/images/asol-token-icon.svg",
+  tags: [],
+  extensions: {
+    coingeckoId: "solana",
+    description: "aSOL is the standard for transacting with staked SOL tokens.",
+    website: "https://asol.so",
+    twitter: "https://twitter.com/aSOLprotocol",
+    github: "https://github.com/aSolHQ",
+  },
+});
