@@ -400,9 +400,9 @@ dependencies = [
 
 [[package]]
 name = "crate-redeem-in-kind"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3fbb6fb2c1250fd5b92234dd69ce25b52650526133ada3f81f9d40767e3f858d"
+checksum = "5f19b4d98d876265d3545e4380b233388b797bcd177400fddef633b966062293"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
