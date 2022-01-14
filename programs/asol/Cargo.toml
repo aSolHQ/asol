@@ -23,7 +23,7 @@ default = []
 anchor-lang = "0.17.0"
 anchor-spl = "0.17.0"
 base64 = "0.13.0"
-crate-token = { version = "0.3.0", features = ["cpi"] }
+crate-token = { version = "0.4.1", features = ["cpi"] }
 crate-redeem-in-kind = { version = "0.3.0", features = ["cpi"] }
 lido-anchor = { path = "../../lib/lido", version = "0.1.0" }
 marinade = { path = "../../lib/marinade", version = "0.1.0", features = [
