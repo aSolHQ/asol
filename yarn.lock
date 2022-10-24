@@ -36,7 +36,7 @@ __metadata:
     tiny-invariant: ^1.2.0
     ts-node: ^10.4.0
     tslib: ^2.3.1
-    typedoc: ^0.22.7
+    typedoc: ^0.23.18
     typescript: ^4.4.4
   peerDependencies:
     "@crateprotocol/crate-sdk": ^0.3.0
@@ -2215,6 +2215,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"brace-expansion@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "brace-expansion@npm:2.0.1"
+  dependencies:
+    balanced-match: ^1.0.0
+  checksum: a61e7cd2e8a8505e9f0036b3b6108ba5e926b4b55089eeb5550cd04a471fe216c96d4fe7e4c7f995c728c554ae20ddfc4244cad10aef255e72b62930afd233d1
+  languageName: node
+  linkType: hard
+
 "braces@npm:^3.0.1, braces@npm:~3.0.2":
   version: 3.0.2
   resolution: "braces@npm:3.0.2"
@@ -4047,7 +4056,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6, glob@npm:^7.2.0":
+"glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.2.0
   resolution: "glob@npm:7.2.0"
   dependencies:
@@ -5227,15 +5236,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "lru-cache@npm:5.1.1"
-  dependencies:
-    yallist: ^3.0.2
-  checksum: c154ae1cbb0c2206d1501a0e94df349653c92c8cbb25236d7e85190bcaf4567a03ac6eb43166fabfa36fd35623694da7233e88d9601fbf411a9a481d85dbd2cb
-  languageName: node
-  linkType: hard
-
 "lru-cache@npm:^6.0.0":
   version: 6.0.0
   resolution: "lru-cache@npm:6.0.0"
@@ -5339,12 +5339,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"marked@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "marked@npm:3.0.8"
+"marked@npm:^4.0.19":
+  version: 4.1.1
+  resolution: "marked@npm:4.1.1"
   bin:
-    marked: bin/marked
-  checksum: 3cdeaa126bbeca5b1b8d2f91e9728018dcd63b250233f3607009a4d70bb6bd9df8c769f1bc52ce9856d1316c91c9dacb1d94d80696f76d094146b4fab126a4eb
+    marked: bin/marked.js
+  checksum: 717e3357952ee53de831bf0eb110ed075bebca2376c58bcdf7ee523ef540d45308ad6d51b2c933da0968832ea4386f31c142ca65443e77c098e84f6cce73e418
   languageName: node
   linkType: hard
 
@@ -5441,6 +5441,15 @@ fsevents@~2.3.2:
   dependencies:
     brace-expansion: ^1.1.7
   checksum: 66ac295f8a7b59788000ea3749938b0970344c841750abd96694f80269b926ebcafad3deeb3f1da2522978b119e6ae3a5869b63b13a7859a456b3408bd18a078
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "minimatch@npm:5.1.0"
+  dependencies:
+    brace-expansion: ^2.0.1
+  checksum: 15ce53d31a06361e8b7a629501b5c75491bc2b59712d53e802b1987121d91b433d73fcc5be92974fde66b2b51d8fb28d75a9ae900d249feb792bb1ba2a4f0a90
   languageName: node
   linkType: hard
 
@@ -6086,15 +6095,6 @@ fsevents@~2.3.2:
   dependencies:
     mimic-fn: ^2.1.0
   checksum: 2478859ef817fc5d4e9c2f9e5728512ddd1dbc9fb7829ad263765bb6d3b91ce699d6e2332eef6b7dff183c2f490bd3349f1666427eaba4469fba0ac38dfd0d34
-  languageName: node
-  linkType: hard
-
-"onigasm@npm:^2.2.5":
-  version: 2.2.5
-  resolution: "onigasm@npm:2.2.5"
-  dependencies:
-    lru-cache: ^5.1.1
-  checksum: 97aedde610ef561f05853609d6a5b720ec1e123f867bdac1b38b5aeb3bc90ed60209678c75a5f0f9821aa793c720b6d17aabfb956e26ab115ee9b81d6e56bdf7
   languageName: node
   linkType: hard
 
@@ -7119,14 +7119,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"shiki@npm:^0.9.12":
-  version: 0.9.12
-  resolution: "shiki@npm:0.9.12"
+"shiki@npm:^0.11.1":
+  version: 0.11.1
+  resolution: "shiki@npm:0.11.1"
   dependencies:
     jsonc-parser: ^3.0.0
-    onigasm: ^2.2.5
-    vscode-textmate: 5.2.0
-  checksum: ee2ca7b997ffe6d412af946c7fa3909f2ade3fe505fe03b5c3f3c5cc90a9b10dbe34a208c9557ee0376d7a64c23995445cdb7c69e60da855cf80305bafdc018e
+    vscode-oniguruma: ^1.6.1
+    vscode-textmate: ^6.0.0
+  checksum: 2a4ebc3b466816263fc244ae4f67a4ff96aa74d863b9c5e7e4affc50f37fd6d1a781405de0dbf763b777bc33e49a0d441de7ff3fededb8b01e3b8dbb37e2927d
   languageName: node
   linkType: hard
 
@@ -7926,20 +7926,19 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"typedoc@npm:^0.22.7":
-  version: 0.22.7
-  resolution: "typedoc@npm:0.22.7"
+"typedoc@npm:^0.23.18":
+  version: 0.23.18
+  resolution: "typedoc@npm:0.23.18"
   dependencies:
-    glob: ^7.2.0
     lunr: ^2.3.9
-    marked: ^3.0.8
-    minimatch: ^3.0.4
-    shiki: ^0.9.12
+    marked: ^4.0.19
+    minimatch: ^5.1.0
+    shiki: ^0.11.1
   peerDependencies:
-    typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x || 4.4.x
+    typescript: 4.6.x || 4.7.x || 4.8.x
   bin:
     typedoc: bin/typedoc
-  checksum: cff0fc67dd069eabbd161644172e7da66cd4ad772f98c511d5d87d2bcd35851a7f8c232a9a70fdfa55c3d3f5fbcff8a44f263f2bbedeedb4202b9f8cb057d3fa
+  checksum: 2cf1ae57865e53545ba4cbdd8a441870b7a4ad74e421d43f4b731e4643adc82c3a2e89fa9cf1f600f908d9d12da818bcd1d26970c9dce9493a8d8ec5b649b594
   languageName: node
   linkType: hard
 
@@ -8127,10 +8126,17 @@ typescript@^4.4.4:
   languageName: node
   linkType: hard
 
-"vscode-textmate@npm:5.2.0":
-  version: 5.2.0
-  resolution: "vscode-textmate@npm:5.2.0"
-  checksum: 5449b42d451080f6f3649b66948f4b5ee4643c4e88cfe3558a3b31c84c78060cfdd288c4958c1690eaa5cd65d09992fa6b7c3bef9d4aa72b3651054a04624d20
+"vscode-oniguruma@npm:^1.6.1":
+  version: 1.6.2
+  resolution: "vscode-oniguruma@npm:1.6.2"
+  checksum: 6b754acdafd5b68242ea5938bb00a32effc16c77f471d4f0f337d879d0e8e592622998e2441f42d9a7ff799c1593f31c11f26ca8d9bf9917e3ca881d3c1f3e19
+  languageName: node
+  linkType: hard
+
+"vscode-textmate@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "vscode-textmate@npm:6.0.0"
+  checksum: ff6f17a406c2906586afc14ef01cb122e33acd35312e815abb5c924347a777c6783ce3fe7db8b83f1760ebf843c669843b9390f905b69c433b3395af28e4b483
   languageName: node
   linkType: hard
 
@@ -8363,7 +8369,7 @@ typescript@^4.4.4:
   languageName: node
   linkType: hard
 
-"yallist@npm:^3.0.0, yallist@npm:^3.0.2, yallist@npm:^3.1.1":
+"yallist@npm:^3.0.0, yallist@npm:^3.1.1":
   version: 3.1.1
   resolution: "yallist@npm:3.1.1"
   checksum: 48f7bb00dc19fc635a13a39fe547f527b10c9290e7b3e836b9a8f1ca04d4d342e85714416b3c2ab74949c9c66f9cebb0473e6bc353b79035356103b47641285d
